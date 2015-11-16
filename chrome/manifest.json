@@ -1,0 +1,18 @@
+{
+	"manifest_version": 2,
+	
+	"name": "Edmondo",
+	"description": "This extension stems from an inside joke with my friends. It changes all of the cases of Edmodo to Edmondo on the edmodo.com website",
+	"version": "0.1",
+	
+	"content_scripts":[
+		{
+			"matches": ["http://www.edmodo.com/*", "https://www.edmodo.com/*"],
+			"js": ["replace.js"]
+		}
+	],
+	
+	"permissions": [
+		"http://www.edmodo.com/*"
+	]
+}
